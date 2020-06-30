@@ -1,0 +1,11 @@
+pc341 裝完12345678OVA 後指令
+$ cd ~/osdi2019/kernel-4.0/linux-4.0
+$ rm .config#刪除舊的config
+$ cp 4.0.config .config  #放入4.0 config
+$ make menuconfig # 
+$ make -j8 #orj12
+$ cd ~/osdi2019/kernel-4.0
+$ ./cpfiles.sh
+$ ./qemu.sh
+$ ./dbg-qemu.sh
+
